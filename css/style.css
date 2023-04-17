@@ -4,18 +4,15 @@
 }
 
 @font-face {
-	font-family: "Lato";
+	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
 	/* Браузер сначала попробует найти шрифт локально */
-	src: local("Lato"),
+	src: local("Roboto"),
 		/* Если не получилось, загрузит woff2 */
-		url("fonts/Lato/Lato-Regular.woff2") format("woff2"),
+		url("fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
 		/* Если браузер не поддерживает woff2, загрузит woff */
-		url("fonts/Lato/Lato-Regular.woff") format("woff");
-}
-
-body {
+		url("fonts/Roboto/Roboto-Regular.woff") format("woff");
 }
 
 a {
@@ -23,8 +20,192 @@ a {
 }
 
 .center {
-//	max-width: 1140px;
+	max-width: 1180px;
 	width: 100%;
 	margin: 0 auto;
 	/* outline: 1px dashed blue */
 }
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 27px;
+	color: #8794BA;
+}
+
+header {
+	background-image: url(../img/background-top-1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/* max-height: 815px;
+	height: 100%; */
+	height: 815px;
+}
+
+.head_menu {
+	font-size: 16px;
+	line-height: 19px;
+	display: flex;
+	/* justify-content: space-between; */
+	align-items: center;
+}
+
+.head_menu_link {}
+
+.head_menu_logo {}
+
+.head_menu_nav {
+	display: flex;
+	padding-left: 81px;
+	gap: 314px;
+}
+
+.head_menu_nav_list {
+	list-style-type: none;
+	display: flex;
+	gap: 36px;
+	align-items: center;
+}
+
+.head_menu_nav_item {}
+
+.head_menu_nav_list_link,
+.head_menu_nav_profile_link {
+	color: #8794BA;
+}
+
+.head_menu_nav_list_link a {}
+
+.head_menu_nav_profile {
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.head_menu_nav_profile_link {
+	padding-right: 40px;
+}
+
+.head_menu_nav_profile_btn {
+	/* display: block; */
+	/* max-width: 160px;
+	width: 100%; */
+	width: 161px;
+	height: 40px;
+	border: 1px;
+	border: 1px solid #465B95;
+	border-radius: 68px;
+	background-color: #1E2E5C;
+	color: #8794BA;
+}
+
+.main_promo_container {}
+
+.main_promo {}
+
+.main_promo_txt {}
+
+.main_promo_txt_title {}
+
+.main_promo_txt_desc {}
+
+.main_promo_img {}
+
+.main_promo_img_image {}
+
+.main_features {}
+
+.main_features_title {}
+
+.main_features_desc {}
+
+.main_features_list {}
+
+.main_features_list_item {}
+
+.main_features_img {}
+
+.main_features_list_title {}
+
+.main_features_list_desc {}
+
+.main_charts {}
+
+.main_charts_item {}
+
+.main_charts_item_title {}
+
+.main_charts_item_desc {}
+
+.main_charts_item_img {}
+
+.main_plans_container {}
+
+.main_plans {}
+
+.main_plans_title {}
+
+.main_plans_desc {}
+
+.main_plans_list {}
+
+.main_plans_item {}
+
+.main_plans_item_title {}
+
+.main_plans_item_content {}
+
+.main_plans_item_line {}
+
+.main_plans_item_price {}
+
+.main_plans_item_pediodic {}
+
+.main_plans_item_button {}
+
+.main_form {}
+
+.main_form_left {}
+
+.main_form_left_title {}
+
+.main_form_left_img {}
+
+.main_form_left_parthners_list {}
+
+.main_form_left_parthners_item {}
+
+.main_form_left_parthners_item_img {}
+
+.main_form_right {}
+
+.main_form_right_title {}
+
+.main_form_right_start {}
+
+.main_form_right_help {}
+
+.main_form_right_title_stars {}
+
+.footer_container {}
+
+.footer_link {}
+
+.footer_link_logo {}
+
+.footer_nav {}
+
+.footer_nav_list {}
+
+.footer_nav_item {}
+
+.footer_nav_item_ {}
+
+.footer_social_list {}
+
+.footer_social_item {}
+
+.footer_social_item_link {}
+
+.footer_social_item_link_img {}
