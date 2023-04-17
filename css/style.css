@@ -35,7 +35,8 @@ body {
 }
 
 header {
-	background-image: url(../img/background-top-1.png);
+	background-image: url(../img/background-top.png);
+	/* background-image: url(../img/background-top-1.png); */
 	background-repeat: round;
 	background-size: 100%;
 	min-height: 815px;
@@ -87,13 +88,21 @@ header {
 }
 
 .head_menu_nav_profile_btn {
-	/* display: block; */
-	/* max-width: 160px;
-	width: 100%; */
 	width: 161px;
 	height: 40px;
 	border: 1px solid #465B95;
 	border-radius: 68px;
+	background-color: #1E2E5C;
+	color: #8794BA;
+}
+
+.head_menu_nav_profile_btn:hover {
+	color: #fff;
+	background-color: #EF2A82;
+}
+
+.head_menu_nav_profile_btn:active {
+
 	background-color: #1E2E5C;
 	color: #8794BA;
 }
@@ -138,7 +147,23 @@ header {
 	color: #FFFFFF;
 }
 
-.head_promo_img {}
+
+.head_promo_txt_btn:hover {
+	color: #fff;
+	background-color: #EF2A82;
+}
+
+.head_promo_txt_btn:active {
+
+	background-color: #1E2E5C;
+	color: #8794BA;
+}
+
+.head_promo_img {
+	position: absolute;
+	right: 0px;
+	top: 164px;
+}
 
 .head_promo_img_image {}
 
