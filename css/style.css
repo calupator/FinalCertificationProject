@@ -93,26 +93,53 @@ header {
 	width: 100%; */
 	width: 161px;
 	height: 40px;
-	border: 1px;
 	border: 1px solid #465B95;
 	border-radius: 68px;
 	background-color: #1E2E5C;
 	color: #8794BA;
 }
 
-.main_promo_container {}
+.head_promo_container {}
 
-.main_promo {}
+.head_promo {
+	height: 315px;
+	width: 550px;
+	padding-top: 152px;
+}
 
-.main_promo_txt {}
+.head_promo_txt {}
 
-.main_promo_txt_title {}
+.head_promo_txt_title {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 60px;
+	color: #FFFFFF;
+	margin: 0;
+	padding-bottom: 15px;
+}
 
-.main_promo_txt_desc {}
+.head_promo_txt_desc {
+	font-size: 18px;
+	line-height: 27px;
+}
 
-.main_promo_img {}
+.head_promo_txt_btn {
+	margin-top: 49px;
+	background-color: #EF2A82;
+	width: 238px;
+	height: 50px;
+	font-size: 16px;
+	line-height: 19px;
+	border-radius: 68px;
+	border: none;
+	color: #FFFFFF;
+}
 
-.main_promo_img_image {}
+.head_promo_img {}
+
+.head_promo_img_image {}
 
 .main_features {}
 
