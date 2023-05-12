@@ -66,14 +66,21 @@
 				</ul>
 				<div class="head_menu_nav_profile">
 					<a href="#" class="head_menu_nav_profile_link">Sign&nbsp;in</a>
-					<!-- <a href="#" class="head_menu_nav_profile_link">Sign Up</a> -->
 					<button class="head_menu_nav_profile_btn">Sign&nbsp;Up</button>
+					<a href="#" class="head_menu_nav_burger">
+						<svg class="head_menu_nav_burger_img" width="24" height="24" viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg">
+							<rect y="3" width="24" height="3" />
+							<rect y="11" width="24" height="3" />
+							<rect y="19" width="24" height="3" />
+						</svg>
+					</a>
 				</div>
 			</nav>
 		</div>
 
 		<div class="head_promo_container center">
-			<div class="head_promo">
+			<!-- <div class="head_promo">
 				<div class="head_promo_txt">
 					<h1 class="head_promo_txt_title">
 						Monitor your business on&nbsp;real-time dashboard
@@ -85,9 +92,9 @@
 					<button class="head_promo_txt_btn">Try for free</button>
 				</div>
 			</div>
-			<div class="head_promo_img">
-				<img src="img/main-screen-1.png" alt="" height="625" class="head_promo_img_image">
-			</div>
+				<div class="head_promo_img">
+					<!-- <img src="img/main-screen-1.png" alt="" class="head_promo_img_image"> - ->
+				</div> -->
 		</div>
 	</header>
 	<main>
@@ -202,12 +209,17 @@
 					</li>
 				</ul>
 			</div>
+			<div class="main_form_right_rect">
+			</div>
+
 			<div class="main_form_right">
 				<p class="main_form_right_title">Sign Up</p>
-				<button class="main_form_right_btn">Start your free trial</button>
-				<input type="email" name="mail" id="id_mail" placeholder="Your primary email">
-				<input type="password" name="pass" id="id_pass" placeholder="Password">
-				<input type="password" name="pass" id="id_pass2" placeholder="Re-type Password">
+				<form action="#" class="form_send">
+					<button class="main_form_right_btn" type="submit">Start your free trial</button>
+					<input type="email" class="mail" id="id_mail" placeholder="Your primary email" required>
+					<input type="password" class="pass" id="id_pass" placeholder="Password" required>
+					<input type="password" class="pass" id="id_pass2" placeholder="Re-type Password" required>
+				</form>
 				<p class="main_form_right_help">Help us get better</p>
 				<div class="main_form_right_rating">
 					<img src="img/star.svg" alt="" height="15" class="main_form_right_rating_star">
