@@ -264,17 +264,21 @@ button:hover {
 
 .main_features_img {}
 
-.main_features_list_title {
+.main_features_list_text {
+	padding: 15px 15px 0 15px;
+}
+
+.main_features_list_text_title {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 19px;
 	color: #172755;
 }
 
-.main_features_list_desc {
+.main_features_list_text_desc {
+	padding-top: 15px;
 	font-size: 16px;
 	line-height: 22px;
-	padding: 15px 15px 0 15px;
 }
 
 .main_charts {
@@ -287,7 +291,7 @@ button:hover {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 100px;
+	/* gap: 100px; */
 	max-width: 1180px;
 	width: 100%;
 	justify-content: space-between;
@@ -312,6 +316,8 @@ button:hover {
 }
 
 .main_charts_item_img {}
+
+.main_charts_item_img_image {}
 
 .main_plans_container {
 	background-image: url(../img/background-bottom.png);
@@ -353,7 +359,7 @@ button:hover {
 	gap: 20px;
 	overflow-x: scroll;
 	scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
+	scroll-snap-type: x mandatory;
 }
 
 .main_plans_item {
@@ -623,6 +629,21 @@ footer {
 	.main_charts_item_img {}
 }
 
+@media (max-width: 1110px) {
+	.main_charts_item {
+		justify-content: center;
+	}
+
+	.main_charts_item:nth-child(even) {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	
+	.main_charts_item_content {
+		height: auto;
+	}
+}
+
 @media (max-width: 1000px) {
 	header {
 		padding-top: 20px;
@@ -655,13 +676,47 @@ footer {
 		display: none;
 	}
 
+	.main_features_title {
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	.main_features_desc {
+		text-align: left;
+		padding: 0;
+	}
+
+	.main_features_list {
+		gap: 35px;
+		margin: 40px auto 71px auto;
+	}
+
 	.main_features_list_item {
 		display: flex;
-
-
-
-
-
-		 ! ! ! ! ! ! !
+		height: 88px;
 	}
+
+	.main_features_list_text {
+		text-align: left;
+		padding: 0 0 0 28px;
+	}
+
+	.main_features_list_text_desc {
+		padding-top: 9px;
+	}
+
+	.main_charts {
+		gap: 60px;
+	}
+
+	.main_charts_item {
+		gap: 30px;
+	}
+
+	.main_charts_item_img {}
+
+	.main_charts_item_content_title {
+		margin-bottom: 20px;
+	}
+
 }
