@@ -28,7 +28,7 @@ a {
 	max-width: 1180px;
 	width: 100%;
 	margin: 0 auto;
-	outline: 1px dashed yellowgreen
+	/* outline: 1px dashed yellowgreen */
 }
 
 body {
@@ -136,20 +136,20 @@ button:hover {
 
 .head_menu_nav_burger_img {
 	fill: #8794BA;
-	transition: all 0.3 linear;
-	-webkit-transition: all 0.3 linear;
-	-moz-transition: all 0.3 linear;
-	-ms-transition: all 0.3 linear;
-	-o-transition: all 0.3 linear;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 }
 
 .head_menu_nav_burger_img:hover {
 	fill: white;
-	transition: all 0.3 linear;
-	-webkit-transition: all 0.3 linear;
-	-moz-transition: all 0.3 linear;
-	-ms-transition: all 0.3 linear;
-	-o-transition: all 0.3 linear;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 	-webkit-transition: all 0.3 linear;
 }
 
@@ -367,8 +367,7 @@ button:hover {
 
 .main_plans_item {
 	width: 340px;
-	height: 420px;
-
+	height: 440px;
 	background: #0F1F4B;
 	opacity: 0.7;
 	/* card / shadow */
@@ -398,7 +397,6 @@ button:hover {
 	color: #172755;
 	transition: color 0.8s ease-in-out;
 }
-
 
 .main_plans_item_content {
 	font-size: 18px;
@@ -461,11 +459,17 @@ button:hover {
 	background-color: #EF2A82;
 }
 
+.main_plans_item:hover .main_plans_item_btn:hover {
+	background-color: #1E2E5C;
+	color: #8794BA;
+}
+
 .main_form {
 	display: flex;
 	max-width: 952px;
 	height: 522px;
 	margin: 109px auto;
+	justify-content: center;
 }
 
 .main_form_left {
@@ -477,6 +481,7 @@ button:hover {
 	font-size: 32px;
 	line-height: 40px;
 	color: #160637;
+	max-width: 431px;
 }
 
 .main_form_left_img {
@@ -573,8 +578,8 @@ button:hover {
 }
 
 .main_form_right_line {
-	margin-left: 43px;
-	margin-bottom: 16px;
+	margin: 0 auto 16px auto;
+	/* margin-bottom: 16px; */
 	width: 336px;
 }
 
@@ -621,6 +626,7 @@ footer {
 	list-style: none;
 	display: flex;
 	gap: 40px;
+	align-items: center;
 }
 
 .footer_social_item {
@@ -669,6 +675,22 @@ footer {
 
 	.main_charts_item_content {
 		height: auto;
+		width: auto;
+	}
+
+	.main_plans_list::-webkit-scrollbar {
+		height: 5px;
+		scroll-padding-right: 100px;
+	}
+
+	.main_plans_list::-webkit-scrollbar-thumb {
+		background-color: #2A407C;
+		scroll-snap-align: center;
+		border-radius: 9em;
+		-webkit-border-radius: 9em;
+		-moz-border-radius: 9em;
+		-ms-border-radius: 9em;
+		-o-border-radius: 9em;
 	}
 }
 
@@ -687,14 +709,27 @@ footer {
 	}
 
 	.head_menu_nav_profile_link {
-		/* 	gap: 18px;
-	} */
+		/* 	gap: 18px; */
 		left: calc(50% - 48px/2 + 101.5px);
 	}
 
 	.head_menu_nav_burger {
 		margin-left: 18px;
 		display: block;
+	}
+
+	.main_plans_container {
+		min-height: 857px;
+		padding-bottom: 155px;
+	}
+
+	.main_form {
+		margin: 34px auto;
+	}
+
+	.main_form_right_text {
+		max-width: 431px;
+		margin-bottom: 32px;
 	}
 }
 
@@ -705,6 +740,25 @@ footer {
 
 	.main_form_right {
 		margin: 0 auto;
+		max-width: 375px;
+		height: auto;
+	}
+
+	.main_form_right_btn {
+		margin: 16px 20px 0 20px;
+		width: 335px;
+	}
+
+	#id_mail,
+	#id_pass,
+	#id_pass2 {
+		margin: 16px 20px 0 20px;
+		width: 315px;
+		height: 51px;
+	}
+
+	.main_form_right_rating {
+		margin: 16px 138px;
 	}
 }
 
@@ -714,7 +768,7 @@ footer {
 	}
 
 	.main_features_title {
-		margin-bottom: 20px;
+		margin:50px auto 20px;
 		text-align: left;
 	}
 
@@ -760,7 +814,7 @@ footer {
 	}
 
 	.main_plans {
-		padding-top: 200px;
+		/* padding: 200px 0 44px 0; */
 	}
 
 	.main_plans_container {
@@ -776,7 +830,59 @@ footer {
 		margin-bottom: 42px;
 		text-align: left;
 	}
-	.footer_nav{
+
+	.main_plans_list {
+		height: 420px;
+	}
+
+	.main_plans_item {
+		height: 358px;
+		width: 280px;
+	}
+
+	.main_plans_item_title {
+		margin: 35px auto 7px;
+		font-size: 25px;
+		line-height: 29px;
+	}
+
+	.main_plans_item_content {
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.main_plans_item_line {
+		width: 220px;
+		margin: 30px auto 20px auto;
+	}
+
+	.main_plans_item_price {
+		font-size: 30px;
+		line-height: 35px;
+		margin-bottom: 15px;
+	}
+
+	.main_plans_item_pediodic {
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.main_plans_item_btn {
+		width: 206px;
+		height: 50px;
+		margin: 36px 37px 46px 37px;
+	}
+
+	.main_form {
+		max-width: 375px;
+		width: 100%;
+	}
+
+	.footer_link_logo {
+		width: 125px;
+	}
+
+	.footer_nav {
 		display: none;
 	}
 }
