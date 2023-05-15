@@ -15,7 +15,6 @@
 	<header>
 		<div class="head_menu center">
 			<a href="index.html" class="head_menu_link">
-				<!-- <img src="img/logo.svg" alt="logo" height="40" class="head_menu_logo"> -->
 				<svg width="185" height="40" viewBox="0 0 185 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M36.5083 8.70613C32.9048 3.44887 26.8551 0 20 0C8.95431 0 0 8.9543 0 20C0 21.607 0.189533 23.1697 0.547447 24.667L10.7322 14.4822C11.7085 13.5059 13.2915 13.5059 14.2678 14.4822L22.5 22.7145L36.5083 8.70613Z"
@@ -45,7 +44,6 @@
 						fill="white" />
 					<rect x="0.5" y="0.5" width="183.023" height="39" stroke="black" />
 				</svg>
-
 			</a>
 			<nav class="head_menu_nav">
 				<ul class="head_menu_nav_list">
@@ -68,14 +66,40 @@
 				<div class="head_menu_nav_profile">
 					<a href="#" class="head_menu_nav_profile_link">Sign&nbsp;in</a>
 					<button class="head_menu_nav_profile_btn">Sign&nbsp;Up</button>
-					<a href="#" class="head_menu_nav_burger">
+					<label class="head_menu_nav_burger" for="head_menu_nav_burger_switch">
 						<svg class="head_menu_nav_burger_img" width="24" height="24" viewBox="0 0 24 24"
 							xmlns="http://www.w3.org/2000/svg">
 							<rect y="3" width="24" height="3" />
 							<rect y="11" width="24" height="3" />
 							<rect y="19" width="24" height="3" />
 						</svg>
-					</a>
+					</label>
+					<input id="head_menu_nav_burger_switch" type="checkbox">
+					<ul class="head_menu_nav_burger_list">
+						<li class="head_menu_nav_item">
+							<label class="head_menu_nav_item_close_btn" for="head_menu_nav_burger_switch"></label>
+						</li>
+						<li class="head_menu_nav_item_header">MENU
+						</li>
+						<li class="head_menu_nav_burger_item">
+							<a href="#" class="head_menu_nav_burger_list_link">Products</a>
+						</li>
+						<li class="head_menu_nav_burger_item">
+							<a href="#" class="head_menu_nav_burger_list_link">Pricing</a>
+						</li>
+						<li class="head_menu_nav_burger_item">
+							<a href="#" class="head_menu_nav_burger_list_link">FAQ</a>
+						</li>
+						<li class="head_menu_nav_burger_item">
+							<a href="#" class="head_menu_nav_burger_list_link">Blog</a>
+						</li>
+						<li class="head_menu_nav_burger_item">
+							<a href="#" class="head_menu_nav_burger_list_link">Blog</a>
+						</li>
+						<li class="head_menu_nav_item">
+							<button class="head_menu_nav_profile_btn1">Sign&nbsp;Up</button>
+						</li>
+					</ul>
 				</div>
 			</nav>
 		</div>
@@ -302,7 +326,8 @@
 			<ul class="footer_social_list">
 				<li class="footer_social_item">
 					<a href="#" class="footer_social_item_link" target="_blank">
-						<svg class="footer_social_item_link_img"width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg class="footer_social_item_link_img" width="10" height="20" viewBox="0 0 10 20" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
 							<path
 								d="M2.5 6.66667H0V10H2.5V20H6.66667V10H9.66667L10 6.66667H6.66667V5.25C6.66667 4.5 6.83333 4.16667 7.58333 4.16667H10V0H6.83333C3.83333 0 2.5 1.33333 2.5 3.83333V6.66667Z"
 								fill="#8794BA" />
@@ -311,7 +336,8 @@
 				</li>
 				<li class="footer_social_item">
 					<a href="#" class="footer_social_item_link" target="_blank">
-						<svg class="footer_social_item_link_img"width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg class="footer_social_item_link_img" width="25" height="20" viewBox="0 0 25 20" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
 							<path
 								d="M7.7392 20C17.0259 20 22.1045 12.3061 22.1045 5.63472C22.1045 5.41612 22.1 5.19865 22.0899 4.98202C23.0757 4.26942 23.9327 3.37993 24.6086 2.36786C23.704 2.76978 22.7306 3.04043 21.7093 3.16246C22.7516 2.53747 23.5521 1.54834 23.9296 0.369453C22.9539 0.947983 21.8736 1.36838 20.7238 1.59509C19.8021 0.613796 18.49 0 17.0382 0C14.2497 0 11.9885 2.26122 11.9885 5.04835C11.9885 5.44467 12.033 5.8298 12.1192 6.19953C7.92337 5.98878 4.20253 3.97946 1.71264 0.924752C1.27853 1.67066 1.02859 2.53775 1.02859 3.46222C1.02859 5.21376 1.92004 6.76015 3.27554 7.66503C2.44735 7.63956 1.66926 7.41173 0.988846 7.03332C0.987727 7.05431 0.987727 7.07558 0.987727 7.09769C0.987727 9.54308 2.72835 11.5846 5.03827 12.0472C4.61424 12.1628 4.1681 12.225 3.7074 12.225C3.38217 12.225 3.0659 12.1925 2.7583 12.134C3.40093 14.1397 5.26498 15.5996 7.47498 15.6407C5.74667 16.9951 3.5697 17.802 1.20436 17.802C0.797123 17.802 0.395203 17.7788 0 17.7321C2.23435 19.164 4.88741 20 7.7392 20Z"
 								fill="#8794BA" />
@@ -321,7 +347,8 @@
 				</li>
 				<li class="footer_social_item">
 					<a href="#" class="footer_social_item_link" target="_blank">
-						<svg class="footer_social_item_link_img"width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg class="footer_social_item_link_img" width="21" height="20" viewBox="0 0 21 20" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
 							<path
 								d="M10.6084 1.83333C13.2751 1.83333 13.6084 1.83333 14.6917 1.91667C17.4417 2 18.6917 3.33333 18.7751 6C18.8584 7.08333 18.8584 7.33333 18.8584 10C18.8584 12.6667 18.8584 13 18.7751 14C18.6917 16.6667 17.3584 18 14.6917 18.0833C13.6084 18.1667 13.3584 18.1667 10.6084 18.1667C7.94173 18.1667 7.6084 18.1667 6.6084 18.0833C3.8584 18 2.6084 16.6667 2.52507 14C2.44173 12.9167 2.44173 12.6667 2.44173 10C2.44173 7.33333 2.44173 7 2.52507 6C2.6084 3.33333 3.94173 2 6.6084 1.91667C7.6084 1.83333 7.94173 1.83333 10.6084 1.83333ZM10.6084 0C7.8584 0 7.52506 0 6.52506 0.0833333C2.8584 0.25 0.858398 2.25 0.691732 5.91667C0.608398 6.91667 0.608398 7.25 0.608398 10C0.608398 12.75 0.608398 13.0833 0.691732 14.0833C0.858398 17.75 2.8584 19.75 6.52506 19.9167C7.52506 20 7.8584 20 10.6084 20C13.3584 20 13.6917 20 14.6917 19.9167C18.3584 19.75 20.3584 17.75 20.5251 14.0833C20.6084 13.0833 20.6084 12.75 20.6084 10C20.6084 7.25 20.6084 6.91667 20.5251 5.91667C20.3584 2.25 18.3584 0.25 14.6917 0.0833333C13.6917 0 13.3584 0 10.6084 0ZM10.6084 4.83333C7.77506 4.83333 5.44173 7.16667 5.44173 10C5.44173 12.8333 7.77506 15.1667 10.6084 15.1667C13.4417 15.1667 15.7751 12.8333 15.7751 10C15.7751 7.16667 13.4417 4.83333 10.6084 4.83333ZM10.6084 13.3333C8.77506 13.3333 7.27506 11.8333 7.27506 10C7.27506 8.16667 8.77506 6.66667 10.6084 6.66667C12.4417 6.66667 13.9417 8.16667 13.9417 10C13.9417 11.8333 12.4417 13.3333 10.6084 13.3333ZM15.9417 3.5C15.2751 3.5 14.7751 4 14.7751 4.66667C14.7751 5.33333 15.2751 5.83333 15.9417 5.83333C16.6084 5.83333 17.1084 5.33333 17.1084 4.66667C17.1084 4 16.6084 3.5 15.9417 3.5Z"
 								fill="#8794BA" />
