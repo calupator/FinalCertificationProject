@@ -92,6 +92,11 @@ header {
 .head_menu_nav_list_link:hover,
 .head_menu_nav_profile_link:hover {
 	color: white;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 }
 
 .head_menu_nav_profile {
@@ -100,8 +105,16 @@ header {
 	align-items: center;
 }
 
-.head_menu_nav_profile_link {
-	/* padding-right: 40px; */
+.head_menu_nav_profile_link {}
+
+.head_menu_nav_list_link:active,
+.head_menu_nav_profile_link:active {
+	color: #8794BA;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 }
 
 .head_menu_nav_profile_btn {
@@ -112,6 +125,11 @@ header {
 	border-radius: 68px;
 	background-color: #1E2E5C;
 	color: #8794BA;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 }
 
 /* .head_menu_nav_profile_btn:hover { */
@@ -150,7 +168,15 @@ button:hover {
 	-moz-transition: all 0.3s linear;
 	-ms-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
-	-webkit-transition: all 0.3 linear;
+}
+
+.head_menu_nav_burger_img:active {
+	fill: #8794BA;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 }
 
 .head_promo_container {
@@ -164,9 +190,7 @@ button:hover {
 	width: 550px;
 }
 
-.head_promo_txt {
-	/* margin-bottom: 296px; */
-}
+.head_promo_txt {}
 
 .head_promo_txt_title {
 	font-family: 'Roboto';
@@ -175,15 +199,12 @@ button:hover {
 	font-size: 50px;
 	line-height: 60px;
 	color: #FFFFFF;
-
 	margin: 0;
-	/* 	padding-bottom: 15px; */
 }
 
 .head_promo_txt_desc {
 	font-size: 18px;
 	line-height: 27px;
-
 	margin-top: 15px;
 }
 
@@ -207,7 +228,6 @@ button:hover {
 }
 
 .head_promo_txt_btn:active {
-
 	background-color: #1E2E5C;
 	color: #8794BA;
 }
@@ -359,10 +379,8 @@ button:hover {
 	gap: 20px;
 	overflow-x: auto;
 	overflow-y: hidden;
-	/* scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 	scroll-snap-type: x mandatory;
-	scrollbar-width: thin;
-  scrollbar-color: hsl(0 0% 50%); */
 }
 
 .main_plans_item {
@@ -370,8 +388,7 @@ button:hover {
 	height: 440px;
 	background: #0F1F4B;
 	opacity: 0.7;
-	/* card / shadow */
-
+	scroll-snap-align: center;
 	box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
 	border-radius: 30px;
 }
@@ -395,7 +412,11 @@ button:hover {
 
 .main_plans_item:hover .main_plans_item_title {
 	color: #172755;
-	transition: color 0.8s ease-in-out;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 }
 
 .main_plans_item_content {
@@ -419,7 +440,11 @@ button:hover {
 
 .main_plans_item:hover .main_plans_item_price_usd {
 	color: #172755;
-	transition: color 0.8s ease-in-out;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 }
 
 .main_plans_item_price {
@@ -433,7 +458,11 @@ button:hover {
 
 .main_plans_item:hover .main_plans_item_price {
 	color: #172755;
-	transition: color 0.8s ease-in-out;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 }
 
 .main_plans_item_pediodic {
@@ -457,11 +486,21 @@ button:hover {
 .main_plans_item:hover .main_plans_item_btn {
 	border: 0px;
 	background-color: #EF2A82;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 }
 
 .main_plans_item:hover .main_plans_item_btn:hover {
 	background-color: #1E2E5C;
 	color: #8794BA;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 }
 
 .main_form {
@@ -603,7 +642,15 @@ footer {
 
 .footer_link {}
 
-.footer_link_logo {}
+.footer_link_logo:hover path:nth-child(odd),
+.footer_link_logo:hover path:nth-child(even) {
+	fill: white;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+}
 
 .footer_nav {}
 
@@ -614,12 +661,29 @@ footer {
 }
 
 .footer_nav_item {}
-
 .footer_nav_item_link {
 	font-size: 14px;
 	line-height: 16px;
 
 	color: #8794BA;
+}
+
+.footer_nav_item_link:hover {
+	color: white;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+}
+
+.footer_nav_item_link:active {
+	color: #8794BA;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
 }
 
 .footer_social_list {
@@ -637,6 +701,40 @@ footer {
 .footer_social_item_link {}
 
 .footer_social_item_link_img {}
+
+.footer_social_item_link_img {
+	fill: white;
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+}
+
+.footer_social_item_link_img path:last-child {
+	fill: #8794BA;
+}
+
+.footer_social_item_link_img:hover path:first-child {
+	/* fill: #F26376; */
+	transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+}
+
+.footer_social_item_link_img:hover path:last-child {
+	fill: #fff;
+}
+
+.footer_social_item_link_img:active path:first-child {
+	fill: #fff;
+}
+
+.footer_social_item_link_img:active path:last-child {
+	fill: #EF2A82;
+}
 
 @media (max-width: 1450px) {}
 
@@ -768,7 +866,7 @@ footer {
 	}
 
 	.main_features_title {
-		margin:50px auto 20px;
+		margin: 50px auto 20px;
 		text-align: left;
 	}
 
