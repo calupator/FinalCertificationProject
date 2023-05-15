@@ -714,7 +714,7 @@ input[id="head_menu_nav_burger_switch"] {
 #id_pass2 {
 	margin: 16px 40px 0 40px;
 	width: 332px;
-	height: 51px;
+	height: 47px;
 	padding-left: 16px;
 }
 
@@ -728,11 +728,46 @@ input[id="head_menu_nav_burger_switch"] {
 }
 
 .main_form_right_rating {
-	margin: 16px 164px;
+	margin: 16px auto;
+  height: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
 }
 
-.main_form_right_rating_star {
-	margin-right: -1px;
+.main_form_right_rating:not(:checked)>input {
+  display: none;
+}
+
+.main_form_right_rating:not(:checked)>label {
+  width: 30px;
+  cursor: pointer;
+  font-size: 35px;
+  color: lightgrey;
+  text-align: center;
+  line-height: 1;
+}
+
+.main_form_right_rating:not(:checked)>label:before {
+  content: '★';
+}
+
+.main_form_right_rating>input:checked~label {
+  color: #FFD36F;
+}
+
+.main_form_right_rating:not(:checked)>label:hover,
+.main_form_right_rating:not(:checked)>label:hover~label {
+  color:#FFD36F;
+}
+
+.main_form_right_rating>input:checked+label:hover,
+.main_form_right_rating>input:checked+label:hover~label,
+.main_form_right_rating>input:checked~label:hover,
+.main_form_right_rating>input:checked~label:hover~label,
+.main_form_right_rating>label:hover~input:checked~label {
+  color: #FFD36F;
 }
 
 .main_form_right_line {
