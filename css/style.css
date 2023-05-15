@@ -357,9 +357,12 @@ button:hover {
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-	overflow-x: scroll;
-	scroll-behavior: smooth;
+	overflow-x: auto;
+	overflow-y: hidden;
+	/* scroll-behavior: smooth;
 	scroll-snap-type: x mandatory;
+	scrollbar-width: thin;
+  scrollbar-color: hsl(0 0% 50%); */
 }
 
 .main_plans_item {
@@ -374,6 +377,12 @@ button:hover {
 	border-radius: 30px;
 }
 
+.main_plans_item:hover {
+	background-color: #FFFFFF;
+	opacity: 1;
+	transition: background-color 0.8s ease-out;
+}
+
 .main_plans_item_title {
 	font-weight: 700;
 	font-size: 30px;
@@ -384,6 +393,12 @@ button:hover {
 	color: #FFFFFF;
 	margin-bottom: 10px;
 }
+
+.main_plans_item:hover .main_plans_item_title {
+	color: #172755;
+	transition: color 0.8s ease-in-out;
+}
+
 
 .main_plans_item_content {
 	font-size: 18px;
@@ -404,6 +419,11 @@ button:hover {
 	color: #FFFFFF;
 }
 
+.main_plans_item:hover .main_plans_item_price_usd {
+	color: #172755;
+	transition: color 0.8s ease-in-out;
+}
+
 .main_plans_item_price {
 	font-weight: 700;
 	font-size: 60px;
@@ -411,6 +431,11 @@ button:hover {
 	color: #FFFFFF;
 	text-align: center;
 	margin-bottom: 5px;
+}
+
+.main_plans_item:hover .main_plans_item_price {
+	color: #172755;
+	transition: color 0.8s ease-in-out;
 }
 
 .main_plans_item_pediodic {
@@ -429,6 +454,11 @@ button:hover {
 	line-height: 19px;
 	color: #FFFFFF;
 	margin: 40px 70px 70px 70px;
+}
+
+.main_plans_item:hover .main_plans_item_btn {
+	border: 0px;
+	background-color: #EF2A82;
 }
 
 .main_form {
@@ -471,13 +501,12 @@ button:hover {
 .main_form_left_parthners_item_img {}
 
 .main_form_right {
-	width: 480px;
+	max-width: 428px;
 	height: 475px;
 	background: #FFFFFF;
 	z-index: 1;
 	outline: 1px dotted gray;
 	/* Shadow 2 */
-
 	box-shadow: 4px 4px 12px rgba(137, 137, 162, 0.122);
 	border-radius: 8px;
 }
@@ -536,8 +565,7 @@ button:hover {
 }
 
 .main_form_right_rating {
-	margin: 16px 166px;
-
+	margin: 16px 164px;
 }
 
 .main_form_right_rating_star {
@@ -638,7 +666,7 @@ footer {
 		flex-direction: column-reverse;
 		align-items: center;
 	}
-	
+
 	.main_charts_item_content {
 		height: auto;
 	}
@@ -668,7 +696,16 @@ footer {
 		margin-left: 18px;
 		display: block;
 	}
+}
 
+@media (max-width: 900px) {
+	.main_form_left {
+		display: none;
+	}
+
+	.main_form_right {
+		margin: 0 auto;
+	}
 }
 
 @media (max-width: 768px) {
@@ -713,10 +750,33 @@ footer {
 		gap: 30px;
 	}
 
-	.main_charts_item_img {}
+	.main_charts_item_img_image {
+		width: 335px;
+		height: 229px;
+	}
 
 	.main_charts_item_content_title {
 		margin-bottom: 20px;
 	}
 
+	.main_plans {
+		padding-top: 200px;
+	}
+
+	.main_plans_container {
+		margin-top: 73px;
+	}
+
+	.main_plans_title {
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	.main_plans_desc {
+		margin-bottom: 42px;
+		text-align: left;
+	}
+	.footer_nav{
+		display: none;
+	}
 }
