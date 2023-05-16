@@ -358,7 +358,7 @@ input[id="head_menu_nav_burger_switch"] {
 	box-sizing: border-box;
 	/* max-width: 873px; */
 	max-width: calc(50% - 100px);
-	
+
 	width: 100%;
 	min-height: 555px;
 	background-image: url(../img/main-screen-1.png);
