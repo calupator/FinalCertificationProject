@@ -336,14 +336,14 @@ input[id="head_menu_nav_burger_switch"] {
 	margin: 0 0 241px;
 }
 
-.head_promo_txt_btn:hover {
+.head_promo_btn:hover {
 	color: #EF2A82;
 	background: #FFFFFF;
 	transition: background-color 0.7s ease;
 	cursor: pointer;
 }
 
-.head_promo_txt_btn:active {
+.head_promo_btn:active {
 	color: #FFFFFF;
 	background: #EF2A82
 }
@@ -356,7 +356,9 @@ input[id="head_menu_nav_burger_switch"] {
 
 .head_promo_img {
 	box-sizing: border-box;
-	max-width: 873px;
+	/* max-width: 873px; */
+	max-width: calc(50% - 100px);
+	
 	width: 100%;
 	min-height: 555px;
 	background-image: url(../img/main-screen-1.png);
